@@ -117,8 +117,8 @@ a:hover {
     display: flex;
     flex-direction: column;
     background: url(../images/01-Hobbiton-Airbnb-The-Shire-Credit-Larnie-Nicolson.webp) no-repeat;
-    background-size: cover;
-    background-position: bottom;
+
+
     font-size: 1.7rem;    
  }
  .home .content-wrapper {
@@ -141,25 +141,54 @@ a:hover {
     font-size: 3rem;
     color: #D01110;
  }
+ #tolkien {
+    display: flex;
+    justify-content: center;
+    color: #D01110;
+    
+ }
  header {
     padding-bottom: 30px;
  }
 header h1 {
     color: #D01110;
 }
-/* #ring {
+.bottom-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 10%;
 }
-#ring img {
-    width: 200px;
+.ring-container {
+    position: relative;
+    display: inline-block;
 }
-#ring img:hover {
+.ring-container img {
+    display: block;
+    width: 300px;
+    height: auto;
+    padding: 20px;
+}
+.ring-container img:hover {
     transition: 20s ease-in;
-    transform: rotate(360deg);
-} */
+    animation: rotation 6s infinite linear;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.overlay-text {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color:#D01110; 
+    font-size: 20px; 
+    text-align: center;
+}
+
  /* RESUME */
  /* ------------ */
 .download-link {
