@@ -38,11 +38,31 @@ document.addEventListener("DOMContentLoaded", function () {
 //         localStorage.setItem('hasVisitedBefore', true);
 //     }
 // }
-function openModal() {
-document.getElementById('welcomeModal').style.display = 'block';
-}
-function closeModal() {
-    document.getElementById('friendLink').addEventListener('click', closeModal);
-    document.getElementById('welcomeModal').style.display = 'none';
-}
+// function openModal() {
+// document.getElementById('welcomeModal').style.display = 'block';
+
+// }
+// function closeModal() {
+//     document.getElementById('friendLink').addEventListener('click', closeModal);
+//     document.getElementById('welcomeModal').style.display = 'none';
+// }
+// window.onload = openModal;
+
+const hasModalBeenShown = () => localStorage.getItem('modalShown') === 'true';
+const setModalShown = () => localStorage.setItem('modalShown', 'true');
 window.onload = openModal;
+const welcomeModal = document.getElementById('welcomeModal');
+
+function openModal() {
+  if (!hasModalBeenShown()) {
+    welcomeModal.style.display = 'block';
+    setModalShown();
+    console.log("welcome!")
+  }
+}
+document.getElementById('friendLink').addEventListener('click', closeModal);
+function closeModal() {
+  welcomeModal.style.display = 'none';
+}
+
+
