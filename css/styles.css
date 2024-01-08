@@ -167,7 +167,7 @@ header h1 {
     height: auto;
     padding: 20px;
 }
-.ring-container img:hover {
+/* .ring-container img:hover {
     transition: 20s ease-in;
     animation: rotation 6s infinite linear;
 }
@@ -178,7 +178,7 @@ header h1 {
     to {
         transform: rotate(360deg);
     }
-}
+} */
 .overlay-text {
     position: absolute;
     top: 50%; 
@@ -263,7 +263,8 @@ header h1 {
     padding-bottom: 5px;
 }
 .resume-section h3 {
-    font-size: 1.6em;
+    font-size: 1.3em;
+    color:#D01110;
 }
 .work-item {
     margin: 30px 0;
@@ -325,7 +326,7 @@ header h1 {
     display: flex;
     align-items:flex-end;
     transition: .6s cubic-bezier(.28,-0.03,0,.99);
-    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.5);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.4);
 }
 .card > .row {
     color: #0A0A00;
@@ -400,11 +401,9 @@ input:checked + label .description {
         padding-bottom: 5%;
 
     }
-    input:checked + label {
-        height: 40vh;
-    }
     .card {
         width: 100%;
+        height: 80px;
         border-radius: .75rem;
         background-size: cover;
         cursor: pointer;
@@ -413,7 +412,7 @@ input:checked + label .description {
         display: flex;
         align-items: flex-end;
         transition: .6s cubic-bezier(.28,-0.03,0,.99);
-        box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.5);
+        box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.3);
     }
     .card > .row {
         color: #0A0A00;
@@ -428,11 +427,18 @@ input:checked + label .description {
         width: 40px;
         height: 40px;
     }
+    input {
+        display: none;
+    }
     input:checked + label {
         width: 100%;
+        height: 40vh;
         cursor: pointer;
     }
-    
+    input:checked + label .description {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
     .card[for="c4"] {
         background-image: url('../images/SITL_site.png');
         background-position: center;
