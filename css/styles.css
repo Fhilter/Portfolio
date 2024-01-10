@@ -157,6 +157,7 @@ header h1 {
 .bottom-container {
     display: flex;
     justify-content: center;
+    
 }
 .ring-container {
     position: relative;
@@ -167,10 +168,17 @@ header h1 {
     width: 300px;
     height: auto;
     padding: 20px;
+    margin: 20px;
+    animation: rotation 220s infinite linear;
+    
 }
-/* .ring-container img:hover {
-    transition: 20s ease-in;
-    animation: rotation 6s infinite linear;
+
+#tolkien {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 5px 110px;
+    
 }
 @keyframes rotation {
     from {
@@ -179,7 +187,7 @@ header h1 {
     to {
         transform: rotate(360deg);
     }
-} */
+} 
 .overlay-text {
     position: absolute;
     top: 50%; 
@@ -195,8 +203,12 @@ header h1 {
 .download-link {
     position: fixed;
     font-size: 1.5rem;
+    padding: 15px;
     top: 5px;
     left: 5px;
+}
+.resume a:hover {
+    color: #D01110;
 }
 @media screen and (max-width: 1100px) {
     .download-link {
