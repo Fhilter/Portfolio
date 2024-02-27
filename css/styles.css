@@ -118,38 +118,41 @@ a:hover {
     display: flex;
     flex-direction: column;
     background: url(../images/01-Hobbiton-Airbnb-The-Shire-Credit-Larnie-Nicolson.webp) no-repeat;
-
-
     font-size: 1.7rem;    
  }
  .home .content-wrapper {
     flex: 1 0 auto;
  }
+ .home header {
+    text-align: center;
+    padding-bottom: 30px;
+ }
  .content-bg {
     background: rgb(255 255 255 / 0.9);
-    margin: 20px;
-    padding: 30px 50px;
+    padding: 30px;
+    height: auto;
+    flex: 1 0 auto;
  }
- @media screen and (max-width:650px) {
+ @media screen and (max-width:785px) {
     .home .content-wrapper {
+        margin: 10px;
         padding: 10px;
     }
     .content-bg {
-        padding: 20px;
+        padding: 10px;
     }
  }
  #first {
     font-size: 3rem;
     color: #D01110;
  }
+ #resumeLink {
+    text-decoration: none;
+    font-size: 3rem;
+ }
  #tolkien {
     display: flex;
-    justify-content: center;
-    color: #D01110;
-    
- }
- header {
-    padding-bottom: 30px;
+    justify-content: center;  
  }
 header h1 {
     color: #D01110;
@@ -165,20 +168,20 @@ header h1 {
 }
 .ring-container img {
     display: block;
-    width: 300px;
+    width: 400px;
     height: auto;
     padding: 20px;
     margin: 20px;
     animation: rotation 220s infinite linear;
-    
 }
-
+#cvBar {
+    font-weight:900;
+}
 #tolkien {
     display: flex;
     justify-content: center;
     text-align: center;
     padding: 5px 110px;
-    
 }
 @keyframes rotation {
     from {
@@ -196,6 +199,7 @@ header h1 {
     color:#D01110; 
     font-size: 20px; 
     text-align: center;
+
 }
 
  /* RESUME */
@@ -207,8 +211,8 @@ header h1 {
     top: 5px;
     left: 5px;
 }
-.resume a:hover {
-    color: #D01110;
+.resume a::before :hover {
+    color:#EBE8E0;
 }
 @media screen and (max-width: 1100px) {
     .download-link {
@@ -268,7 +272,7 @@ header h1 {
     }
 } */
 .resume-section {
-    margin: 80px;
+    margin: 50px;
     font-size: 1.7rem;
 }
 .resume-section h2 {
@@ -282,16 +286,17 @@ header h1 {
 .work-item {
     margin: 30px 0;
     padding: 10px;
+    display: flex;
+    gap: 20px;
 }
 .work-details p{
     margin: 0;
 }
 
-@media screen and (min-width:860px) {
+@media screen and (max-width:860px) {
     .work-item {
-        display: grid;
-        grid-template-columns: 300px 1fr;
-        column-gap: 20px;
+        display: inline-flex;
+        flex-direction: column;
     }    
     .work-summary p:first-child{
         margin-top: 0;
@@ -484,14 +489,16 @@ input:checked + label .description {
     background-position: left ;
 }
 
+#homeLink a :hover{
+    color: #0A0A00;
+}
 
 /* FOOTER */
   /* ------------ */
 footer {
     background: #0A0A00;
 }
-footer a {
-    
+footer a {   
     color: #D01110;
 }
 footer a:hover {
