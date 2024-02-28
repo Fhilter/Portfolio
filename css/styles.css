@@ -53,7 +53,7 @@ a:hover {
 }
 .btn {
     background-color:#A8BBB0;
-    color: #0A0A00;
+    color:#EBE8E0;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 1.2rem;
@@ -174,7 +174,7 @@ header h1 {
     margin: 20px;
     animation: rotation 220s infinite linear;
 }
-#cvBar {
+#linkArrows {
     font-weight:900;
 }
 #tolkien {
@@ -210,9 +210,11 @@ header h1 {
     padding: 15px;
     top: 5px;
     left: 5px;
+    background: #A8BBB0;
 }
-.resume a::before :hover {
-    color:#EBE8E0;
+.resume .download-link:hover {
+    background: #D01110;
+    color: #EBE8E0;
 }
 @media screen and (max-width: 1100px) {
     .download-link {
