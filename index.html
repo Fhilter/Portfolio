@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Phil Traas | Web designer && Full-stack Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,8 +11,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,700,0,0" />
     <script src="./script.js" defer></script>
+    <script src="./pendulum.js" defer></script>
   </head>
   <body class="home">
     <div id="welcomeModal" class="modal">
@@ -31,44 +32,76 @@
       <div class="content-bg">
         <header>
           <!-- Start content edits below this line. -->
-          <h1>Philip TRAAS</h1>
-          <h2>Full-stack Dev && Web Designer</h2>
-
-          <!-- End content edits here. -->
+          <div class="title-container">
+            <h1>Philip TRAAS</h1>
+            <h2>Full-stack Dev && <br>Web Designer</h2>
+          </div>
+          <div class="image-container">
+            <img src="/images/LQ1A3311.jpg" />
+          </div>
         </header>
         <!-- //  ABOUT ME  // -->
         <main>
           <!-- Start content edits below this line. -->
+          <div class="photo_box">
+            <p>
+              <span id="first">B</span>onjour! Bravo et bienvenue sur mon
+              portfolio et CV en ligne. Vous y trouverez un peu plus de vie que
+              dans les mines de Moria ;)
+            </p>
+          </div>
           <p>
-            <span id="first">B</span>onjour! Bravo et bienvenue sur mon
-            portfolio et CV en ligne. Vous y trouverez un peu plus de vie que
-            dans les mines de Moria ;-)
+            Un danois vivant à marseille, grand amateur de nature et de sports,
+            et toujours prêt à grandir et à changer. J'aime apprendre de manière
+            pratique et, je suis enthousiaste de développer mes compétences en
+            matière de conception et de graphisme afin d'améliorer l'expérience
+            chaque individu et le monde de la tech.
           </p>
           <p>
-            Danois vivant à Marseille, amoureux de la nature et des choses qui poussent et se développent. J'aime apprendre de manière pratique et j'aime chercher à comprendre les choses. Je suis enthousiaste de développer mes compétences en matière de conception et de graphisme afin d'améliorer l'expérience chaque individu et le monde de la tech.
+            Je suis de langue maternelle anglaise, et j'ai vécu de nombreuses
+            années en Afrique du Sud, juste après la chute du régime de
+            l'apartheid, et j'ai toujours aimé cette phrase de Nelson Mandela :
+          </p>
+          <span
+            style="font-style: italic; display: flex; justify-content: center"
+            ><strong
+              >"Je ne perds jamais. Soit je gagne, soit j'apprends."</strong
+            ></span
+          >
+          <p>
+            J'ai essayé de toujours garder cette idée à l'esprit et d'apprendre
+            de mes erreurs et de celles des autres, au lieu d'avoir peur
+            d'essayer et d'échouer.
           </p>
           <p>
-            Je suis de langue maternelle anglaise, et j'ai vécu de nombreuses années en Afrique du Sud, juste après la chute du régime de l'apartheid, et j'ai toujours aimé cette phrase de Nelson Mandela :</p><span style="font-style: italic; display: flex; justify-content: center;"><strong>"Je ne perds jamais. Soit je gagne, soit j'apprends."</strong></span><p> J'ai essayé de toujours garder cette idée à l'esprit et d'apprendre de mes erreurs et de celles des autres, au lieu d'avoir peur d'essayer et d'échouer. 
+            Lorsque je ne passe pas de temps avec ma famille ou que je ne suis
+            pas en train d'apprendre, j'ai divers centres d'intérêt tels que: Le
+            Seigneur des Anneaux et J.R.R Tolkien (évidemment), Formule 1,
+            technologie, photographie et montage video, vélo et randonnée, GoPro
+            et drone, et jeux de société.
           </p>
           <p>
-            Lorsque je ne passe pas de temps avec ma famille ou que je ne suis pas en train d'apprendre, j'ai divers centres d'intérêt tels que: LOTR, Formule 1, technologie, photographie et montage video, vélo et randonnée, GoPro et drone, et jeux de société.
-          </p>
-          <p>
-            Ci-dessous, vous trouverez l'ensemble de mes projets récents et pourrez télécharger mon cv. Bonne
-            lecture!
+            Ci-dessous, vous trouverez l'ensemble de mes projets récents et
+            pourrez télécharger mon cv. Bonne lecture!
           </p>
           <div class="bottom-container">
             <div class="ring-container">
               <img src="./images/the-one-ring-2-logo-png-transparent.png" />
               <div class="overlay-text">
-                <a title="Mon CV" href="resume.html" id="resumeLink">MON CV ET PROJETS<span class="material-symbols-outlined" id="linkArrows">
-                  double_arrow
-                  </span></a>
+                <a title="Mon CV" href="resume.html" id="resumeLink"
+                  >MON CV ET PROJETS<span
+                    class="material-symbols-outlined"
+                    id="linkArrow"
+                  >
+                    chevron_right
+                  </span></a
+                >
               </div>
             </div>
           </div>
           <span id="tolkien"
-            >“ Tout ce que nous avons à décider, c'est ce que nous devons faire du temps qui nous est donné.” – J.R.R Tolkien</span
+            >“ Tout ce que nous avons à décider, c'est ce que nous devons faire
+            du temps qui nous est donné.” – J.R.R Tolkien</span
           >
 
           <!-- End content edits here. -->
